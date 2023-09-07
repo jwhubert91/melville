@@ -45,17 +45,14 @@ export default function Page() {
               secureTextEntry={true}
             />
           </View>
-          <Pressable
-            onPress={() => router.push(ROUTES.signup)}
-            className="mb-3"
-          >
+          <Pressable onPress={() => router.push(ROUTES.login)} className="mb-3">
             <Text className="text-sm text-center">
-              Don't have an account? Sign up
+              Already have an account? Login
             </Text>
           </Pressable>
           <Pressable className="w-full py-3 bg-secondary">
             <Text className="text-xl text-center font-medium text-white">
-              Login
+              Sign Up
             </Text>
           </Pressable>
         </View>
