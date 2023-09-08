@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import { Button, Pressable, Text, TextInput, View } from "react-native"
+import { Pressable, Text, TextInput, View } from "react-native"
 import { FontAwesome5 } from "@expo/vector-icons"
-import { KeyboardAvoidingView, SafeAreaView } from "react-native"
+import { KeyboardAvoidingView } from "react-native"
 import { router } from "expo-router"
 import { ROUTES } from "../helpers/routes"
 

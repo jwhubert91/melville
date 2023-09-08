@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import { Button, Pressable, Text, TextInput, View } from "react-native"
-import { FontAwesome5 } from "@expo/vector-icons"
-import { KeyboardAvoidingView, SafeAreaView } from "react-native"
+import { Pressable, Text, TextInput, View } from "react-native"
+import { KeyboardAvoidingView } from "react-native"
 import { router } from "expo-router"
 import { ROUTES } from "../helpers/routes"
+import WelcomeHeader from "../components/WelcomeHeader"
 
 export default function Page() {
   const [email, setEmail] = useState("")
@@ -16,14 +16,7 @@ export default function Page() {
         behavior="height"
       >
         {/* Welcome container */}
-        <View className="items-center justify-center">
-          <View className="mb-2">
-            <FontAwesome5 name="book-open" size={48} color="black" />
-          </View>
-          <View className="text-center">
-            <Text className="text-2xl">Welcome to Melville</Text>
-          </View>
-        </View>
+        <WelcomeHeader />
         {/* Sign in form */}
         <View>
           <View className="mb-2">
